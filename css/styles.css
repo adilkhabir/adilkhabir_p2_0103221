@@ -359,5 +359,42 @@
       .hébergementPopulairehébergementMenuCarte {
         height: 8.75rem;
       }
+      /*hébergement screen*/
+      @media (max-width: 1440px) {
+        .hébergement {
+          grid-template-columns: 1fr;
+          row-gap: 2rem;
+        }
+        .hébergementPopulaire {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto 10rem;
+          column-gap: 2rem;
+          grid-row-start: 1;
+        }
+        .hébergementPopulaireTitre {
+          grid-column: 1/-1;
+        }
+      }
+      @media (min-width: 925px) {
+        .hébergementMenu {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 925px) and (min-width: 650px) {
+        .hébergementMenu {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 650px) {
+        .hébergementMenu {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 1000px) {
+        .hébergementPopulaire {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto repeat(3, 9rem);
+        }
+      }
     
     
