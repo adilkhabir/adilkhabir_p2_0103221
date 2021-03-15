@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservia_adil</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer ></script>
+</head>
+<body>
+ <!------------------------------------------------ HEADER ---------------------------------------------------->
+ <header class="header">
+  <img class="headerImg" src="images/logo/Reservia.svg" alt="Reservia">
+  <nav class="headerNav">
+    <a class="headerNavLien" href="#" data-active="true">Hébergement</a>
+    <a class="headerNavLien" href="#" data-active="false">Activités</a>
+  </nav>
+  <a class="headerinscription" href="#">S'inscrire</a>
+</header> 
+ <!------------------------------------------------------- Main -------------------------------------------->
+ <main class="Menu">
+    <!-------------------------------------------------- RECHERCHE------------------------------------------------- -->
+    <section class="recherche">
+      <header class="rechercheHeader">
+        <h1 class="rechercheHeaderTitre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="rechercheHeaderSubTitre">En plein centre de ville ou en pleine nature</p>
+      </header>
+      <form class="rechercheForm" action="From.html" method="GET">
+        <span class="rechercheFormicon">
+          <i class="fas fa-map-marker-alt rechercheFormiconeIcone"></i>
+        </span>
+        <input class="rechercheFormrechercheinput" type="search" placeholder="Marseille, France" size="1">
+        <button class="rechercheForminput">
+          <span class="rechercheForminputText">Rechercher</span>
+          <i class="rechercheForminputIcon fas fa-recherche"></i>
+        </button>
+      </form>
+      <div class="recherchefiltres">
+        <h2 class="recherchefiltresTitre">Filtres</h2>
+        <div class="recherchefiltresfiltre">
+          <div class="recherchefiltresfiltreicon">
+            <i class="fas fa-money-bill-wave recherchefiltresfiltreiconeIcone"></i>
+          </div>
+          <span class="recherchefiltresfiltreTitre">Économique</span>
+        </div>
+        <div class="recherchefiltresfiltre">
+          <div class="recherchefiltresfiltreicon">
+            <i class="fas fa-child recherchefiltresfiltreiconeIcone"></i>
+          </div>
+          <span class="recherchefiltresfiltreTitre">Familial</span>
+        </div>
+        <div class="recherchefiltresfiltre">
+          <div class="recherchefiltresfiltreicon">
+            <i class="fas fa-heart recherchefiltresfiltreiconeIcone"></i>
+          </div>
+          <span class="recherchefiltresfiltreTitre">Romantique</span>
+        </div>
+        <div class="recherchefiltresfiltre">
+          <div class="recherchefiltresfiltreicon">
+            <i class="fas fa-dog recherchefiltresfiltreiconeIcone"></i>
+          </div>
+          <span class="recherchefiltresfiltreTitre">Animaux autorisés</span>
+        </div>
+      </div>
+      <div class="rechercheResult">
+        <div class="rechercheResulticon"><i class="fas fa-info rechercheResulticoneIcone"></i></div>
+        <p class="rechercheResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </section>
