@@ -396,5 +396,40 @@
           grid-template-rows: auto repeat(3, 9rem);
         }
       }
+      /*activités*/
+      .Activités {
+        display: grid;
+        column-gap: 2rem;
+        margin: 4rem 0;
+      }
+      .ActivitésTitre {
+        grid-column: 1/-1;
+      }
+      .ActivitésCarte {
+        box-shadow: 0 0 20px #0000002e;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition-duration: 0.1s;
+      }
+      .ActivitésCarte:hover {
+        transform: scale(1.01);
+      }
+      .ActivitésCarteWrapimg {
+        position: relative;
+        flex: 1;
+      }
+      .ActivitésCarteWrapimgImg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .ActivitésCarteTitre {
+        margin: 1.2rem 1.5rem;
+      }
+      
+      
     
     
