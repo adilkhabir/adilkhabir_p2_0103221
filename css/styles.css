@@ -54,3 +54,49 @@
     color: #0065FC;
     font-weight: 600;
   }
+  /*header tablette*/
+  @media screen and (min-width: 601px) {
+    .header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+    }
+    .headerNavLien[data-active=true] {
+      border-top: 3px solid #0065FC;
+    }
+    .headerNavLien:hover {
+      border-top: 3px solid #0065FC;
+    }
+   }
+  @media screen and (max-width: 600px) {
+    .header {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "logo . button" "navbar navbar navbar";
+    }
+    .headerimg {
+      order: 0;
+    }
+    .headerinscription {
+      order: 1;
+    }
+    .headerNav {
+      order: 2;
+    }
+    .headerNavLien {
+      border-top: none;
+      border-bottom: 3px solid #F2F2F2;
+      width: 50%;
+    }
+    .headerNavLien[data-active=true] {
+      border-bottom-color: #0065FC;
+    }
+    .headerNavLi.headerNavLien {
+      border-bottom-color: #0065FC;
+    }
+  }
+  /*main*/
+  .main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
