@@ -429,6 +429,58 @@
       .ActivitésCarteTitre {
         margin: 1.2rem 1.5rem;
       }
+      /*activités screen*/
+      @media (min-width: 1100px) {
+        .Activités {
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+        }
+        .ActivitésCarte1 {
+          grid-row: 2/7;
+          grid-column: 1/2;
+        }
+        .ActivitésCarte2 {
+          grid-column: 2/3;
+          grid-row: 2/5;
+        }
+        .ActivitésCarte3 {
+          grid-column: 3/4;
+          grid-row: 2/7;
+        }
+        .ActivitésCarte4 {
+          grid-column: 4/5;
+          grid-row: 2/3;
+        }
+        .ActivitésCarte5 {
+          grid-column: 2/3;
+          grid-row: 6/7;
+        }
+        .ActivitésCarte6 {
+          grid-column: 4/5;
+          grid-row: 4/7;
+        }
+      }
+      @media (max-width: 1100px) {
+        .Activités {
+          row-gap: 2rem;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto 12rem 12rem;
+        }
+      }
+      @media (max-width: 925px) {
+        .Activités {
+          row-gap: 2rem;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto 12rem 12rem 12rem;
+        }
+      }
+      @media (max-width: 650px) {
+        .Activités {
+          row-gap: 2rem;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+        }
+      }
       
       
     
